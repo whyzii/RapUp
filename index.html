@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RapUP Support</title>
+<style>
+  :root {
+    --bg: #0a0a0c;
+    --card: #14141a;
+    --border: #232330;
+    --accent: #2e9bff;
+    --text: #f2f2f5;
+    --muted: #9a9aa5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  header img { width: 64px; height: 64px; border-radius: 16px; display: block; }
+  header h1 { font-size: 28px; margin: 0; }
+  header p { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+  h2 { font-size: 20px; margin-top: 48px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; margin-top: 16px; }
+  .card p:first-child { margin-top: 0; }
+  a { color: var(--accent); }
+  a.button {
+    display: inline-block;
+    background: var(--accent);
+    color: #06121f;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+  details {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+  }
+  details + details { margin-top: 0; }
+  summary { cursor: pointer; font-weight: 600; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "›"; display: inline-block; margin-right: 8px; color: var(--accent); transition: transform 0.15s ease; }
+  details[open] summary::before { transform: rotate(90deg); }
+  details p { margin: 12px 0 4px; color: var(--muted); }
+  footer { margin-top: 64px; color: var(--muted); font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="icon.png" alt="RapUP app icon">
+      <div>
+        <h1>RapUP Support</h1>
+        <p>Help, FAQs, and contact for the RapUP app</p>
+      </div>
+    </header>
+
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Need help or have feedback? Reach out and we'll get back to you.</p>
+      <a class="button" href="mailto:abbas.yousefzadeh98@gmail.com">Email Support</a>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>What is RapUP?</summary>
+      <p>RapUP is a focused lyrics editor for songwriters, rappers, and poets — a clean place to turn ideas into finished songs. Keep your whole catalog in one library, structure each song into sections, and write with syllable counts on every line.</p>
+    </details>
+
+    <details>
+      <summary>How do I organize my lyrics?</summary>
+      <p>Everything lives in one searchable library. Sort by recently updated, title A–Z, or recently created, group songs into folders, and bookmark favorites for quick access. Deleted lyrics go to Trash, where you can recover them before they're gone for good.</p>
+    </details>
+
+    <details>
+      <summary>How do I structure a song?</summary>
+      <p>Break a song into named sections — Verse, Chorus, Bridge, Intro, Outro. Collapse a section to focus, drag to reorder lines and sections, and duplicate a section in place or at the end of the song. Up to 50 steps of undo and redo are always one tap away.</p>
+    </details>
+
+    <details>
+      <summary>What is the syllable count for?</summary>
+      <p>Every line automatically shows its syllable count, so you can feel where a bar runs long before you ever sing it out loud — helping you keep your rhythm tight while you write.</p>
+    </details>
+
+    <details>
+      <summary>Is my data private?</summary>
+      <p>Yes. RapUP has no account, no sign-in, and needs no internet connection. Your lyrics are stored only on your device — never uploaded, never shared.</p>
+    </details>
+
+    <details>
+      <summary>What devices does RapUP support?</summary>
+      <p>RapUP is built for iPhone and iPad, with a layout that adapts to whichever you're writing on.</p>
+    </details>
+
+    <details>
+      <summary>How do I report a bug or request a feature?</summary>
+      <p>We'd love to hear from you. Email us at the address above with a short description of the issue or idea, and for bug reports include your device model and iOS version so we can reproduce it faster.</p>
+    </details>
+
+    <footer>
+      &copy; 2026 Abbas Yousefzadeh. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
